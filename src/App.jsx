@@ -5,6 +5,7 @@ import LoginForm from './components/LoginForm/LoginForm'
 import SearchBar from "./components/SearchBar/SearchBar"
 import LangSwitcher from "./components/LangSwitcher/LangSwitcher"
 import './App.css'
+import FeedbackForm from './components/FeedbackForm/FeedbackForm'
 
 export default function App() {
   const [lang, setLang] = useState("uk");
@@ -47,6 +48,8 @@ export default function App() {
         <label><input type="checkbox" name="terms" checked={hasAccepted} onChange={handleChange} />I accept terms and conditions</label>
 
         <button type="button" disabled={!hasAccepted}>Proceed</button>
+
+        <FeedbackForm />
 
 
       </div>
